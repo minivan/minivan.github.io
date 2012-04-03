@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'InconsolataMedium';
+    src: url('Inconsolata-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'InconsolataMedium';
+    background-color: #FFFDF9;
+    color: #444444;
+}
+
+#top-bar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #C83E22;
+    box-shadow: 0 0 10px #888;
+    z-index: 20;
+}
+
+#container{
+    height: 100%;
+    width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#container a{
+    color: #C83E22;
+}
+
+#container ul{
+    list-style-type: none;
+}
+
+#container li{
+    border-bottom : 1px dashed #DDDDDD;
+    padding: 5px 0 5px 0;
+}
+
+.pull-right{
+    float: right;
+}

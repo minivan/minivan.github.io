@@ -1,0 +1,2 @@
+exclude: ['CNAME', 'README.md']
+permalink: pretty
