@@ -19,6 +19,10 @@ html, body{
     color: #444444;
 }
 
+::selection{
+    background-color: #FFF3D5;
+}
+
 #top-bar{
     top: 0;
     position: fixed;
