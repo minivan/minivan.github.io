@@ -22,6 +22,7 @@ html, body{
 #top-bar{
     top: 0;
     position: fixed;
+    height: 19px;
     width: 100%;
     background-color: #C83E22;
     box-shadow: 0 0 10px #888;
