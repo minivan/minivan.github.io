@@ -52,3 +52,9 @@ html, body{
 .pull-right{
     float: right;
 }
+
+.code{
+    background: #FFF3D5;
+    padding: 5px;
+    border-radius: 3px;
+}

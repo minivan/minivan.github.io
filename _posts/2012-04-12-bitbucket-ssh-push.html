@@ -18,7 +18,7 @@ title: Bitbucket SSH push
         that it was because: in my <b>.git/config</b> file, the url of
         the Bitbucket remote was in the format:
     </p>
-    <p>
+    <p class="code">
         <b>
             [remote "origin"]<br>
             &nbsp;&nbsp;&nbsp;&nbsp;url = https://username@bitbucket.org/username/reponame.git<br>
@@ -30,7 +30,7 @@ title: Bitbucket SSH push
         tunneling. The solution?<br>
         Using the git protocol format:
     </p>
-    <p>
+    <p class="code">
         <b>
             [remote "origin"]<br>
             &nbsp;&nbsp;&nbsp;&nbsp;url = git@bitbucket.org:username/reponame.git<br>
