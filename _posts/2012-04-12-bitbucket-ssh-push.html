@@ -19,11 +19,9 @@ title: Bitbucket SSH push
         the Bitbucket remote was in the format:
     </p>
     <p class="code">
-        <b>
             [remote "origin"]<br>
             &nbsp;&nbsp;&nbsp;&nbsp;url = https://username@bitbucket.org/username/reponame.git<br>
             &nbsp;&nbsp;&nbsp;&nbsp;fetch = +refs/heads/*:refs/remotes/origin/*<br>
-        </b>
     </p>
     <p>
         Thus forcing the password request on every action, for the ssh
@@ -31,11 +29,9 @@ title: Bitbucket SSH push
         Using the git protocol format:
     </p>
     <p class="code">
-        <b>
             [remote "origin"]<br>
             &nbsp;&nbsp;&nbsp;&nbsp;url = git@bitbucket.org:username/reponame.git<br>
             &nbsp;&nbsp;&nbsp;&nbsp;fetch = +refs/heads/*:refs/remotes/origin/*<br>
-        </b>
     </p>
     <p>
         That's all, now I can push using only the SSH key. I still have to push
