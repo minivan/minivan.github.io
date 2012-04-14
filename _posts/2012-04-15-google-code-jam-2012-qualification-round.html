@@ -1,0 +1,56 @@
+---
+layout: post
+title: Google Code Jam 2012 Qualification Round
+---
+<article>
+    <h2> {{ page.title }} </h2>
+    <p>
+	This year the qualification round consisted of 4 problems. As lately
+	I have been using Ruby I decided to try my luck with it, and avoid 
+	writing all the Java boilerplate code to do simple things like reading
+	and parsing a text file. I am using Ubuntu 12.04 installed in VirtualBox 4.1.12
+    </p> 
+    <p>
+	The competition started at 01:00 AM in my country, but nevertheless I stayed up
+	and tried (and solved) at least one of the problems before sleep kicked in. These
+	are the solutions I came up with under the circumstances.
+    </p>
+    <h3>Problem A: Speaking in Tongues</h3>
+    <p> This one was the first I tried, and in my opinion the easiest of the set. The
+	explanation and the hints made very clear what was to do. This solution gave me 
+	15 points:
+    </p> 
+    <p class="code">
+        #googlerese to english<br>
+        mapping = <br>
+	&nbsp;&nbsp;{"a" => "y", "b" => "h", "c" => "e", "d" => "s", "e" => "o",<br>
+	&nbsp;&nbsp;&nbsp;"f" => "c", "g" => "v", "h" => "x", "i" => "d", "j" => "u",<br>
+	&nbsp;&nbsp;&nbsp;"k" => "i", "l" => "g", "m" => "l", "n" => "b", "o" => "k",<br>
+	&nbsp;&nbsp;&nbsp;"p" => "r", "q" => "z", "r" => "t", "s" => "n", "t" => "w",<br>
+	&nbsp;&nbsp;&nbsp;"u" => "j", "v" => "p", "w" => "f", "x" => "m", "y" => "a",<br>
+	&nbsp;&nbsp;&nbsp;"z" => "q"}<br><br>
+
+	file = File.new("input", "r")<br>
+	max = file.gets<br>
+	counter = 1<br><br>
+
+	while (line = file.gets)<br>
+ 
+  	&nbsp;&nbsp;translatedLine = String.new<br>
+  	&nbsp;&nbsp;line.split("").each do |i|<br><br>
+    	&nbsp;&nbsp;&nbsp;&nbsp;if (i == " ")<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translatedLine << " "<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;else<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translatedLine << mapping[i].to_s <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;end<br>
+        &nbsp;&nbsp;end<br><br>
+
+  	&nbsp;&nbsp;puts "Case ##{counter}: #{translatedLine}"<br>
+  	&nbsp;&nbsp;counter = counter + 1<br>
+	end<br>
+	file.close<br>
+	<a href="/raw/translator.rb" class="pull-right">translator.rb</a><br>
+    </p>
+    <h3>Problem B: Dancing With the Googlers</h3>
+</article>
+
