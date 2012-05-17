@@ -1,2 +1,2 @@
-exclude: ['CNAME', 'README.md']
+exclude: ['CNAME', 'README.md', 'LICENSE.md']
 permalink: pretty

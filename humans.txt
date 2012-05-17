@@ -1,0 +1,14 @@
+---
+layout: nil
+---
+
+/* TEAM */
+        Developer: Robert Boloc
+        Twitter: @robertboloc
+        From: Tarragona, Catalonia, Spain
+
+/* SITE */
+        Last Update: {{ site.time | date: "%Y/%m/%d" }}
+        Language: English
+        Doctype: HTML5
+        IDE: Vim, Netbeans
