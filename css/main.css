@@ -37,7 +37,7 @@ html, body{
     overflow: hidden;
 }
 
-#container a{
+#container a,h4{
     color: #C83E22;
 }
 
