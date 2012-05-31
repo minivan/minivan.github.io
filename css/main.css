@@ -39,6 +39,11 @@ html, body{
 
 #container a,h4{
     color: #C83E22;
+    text-decoration: none;
+}
+
+#container a:hover{
+    text-decoration: underline;
 }
 
 #container ul{
