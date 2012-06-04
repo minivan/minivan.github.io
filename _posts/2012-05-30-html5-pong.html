@@ -10,7 +10,7 @@ title: HTML5 Pong
 		<a href="#" id="playButton"><blink>Play</blink></a>
 	</div>
     <div id="game">
-		<canvas id="pongCanvas" height="480" width="798"></canvas>
+		<canvas id="pongCanvas" height="480" width="798" ></canvas>
 		<audio id="collision" src="/assets/ping_pong_8bit_beeep.ogg" preload="auto" autobuffer></audio>
 		<audio id="point" src="/assets/ping_pong_8bit_peeeeeep.ogg" preload="auto" autobuffer></audio>
 	</div>
@@ -52,11 +52,16 @@ title: HTML5 Pong
 	width: 800px;
 	margin: 0;
     font-family: '8-bit';
+	margin-bottom: -15px;
 }
 
 #wrapper a{
 	text-decoration: none;
 	color: #F03060;
+}
+
+#wrapper a:hover{
+	text-decoration: none;
 }
 
 #pongCanvas{
@@ -88,7 +93,9 @@ title: HTML5 Pong
 	text-align: center;
 	font-size: 30px;
 	width: 100%;
-    margin-top: -55px;
+    margin-top: -65px;
+	position: relative;
+	display: none;
 }
 
 @-webkit-keyframes blink {
@@ -128,6 +135,7 @@ var display;
 var pauseButton;
 var end = false;
 var soundButton;
+var board;
 
 function init() {
     canvas = document.getElementById('pongCanvas');
@@ -136,6 +144,7 @@ function init() {
 	scoreSound = document.getElementById('point');
 	scoreBoard[0] = document.getElementById('playerOneScore');
 	scoreBoard[1] = document.getElementById('playerTwoScore');
+	board = document.getElementById('scoreboard');
 	display = document.getElementById('display');
 	soundButton = document.getElementById('soundButton');
     pauseButton = document.getElementById('pauseButton');
@@ -172,6 +181,8 @@ function init() {
 		gameObjects[0].y = canvas.height/2;
 		gameObjects[0].directionY = 0;
 		first = false;
+		document.getElementById('wrapper').style.paddingBottom = '25px';
+		board.style.display = 'block';
 	}
 
     document.onkeydown = function keyboardController(e){
