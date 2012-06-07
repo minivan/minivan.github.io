@@ -7,7 +7,8 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'pt sans', arial, helvetica, sans-serif !important; 
+    font-family: 'pt sans', arial, helvetica, sans-serif !important;
+    font-size: .92em;
 	text-align: justify;
 	line-height: 1.5em;
     background-color: #FFFDF9;
