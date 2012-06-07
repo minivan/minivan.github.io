@@ -16,13 +16,13 @@ title: Bitbucket SSH push
     that it was because: in my <b>.git/config</b> file, the url of
     the Bitbucket remote was in the format:
 </p>
-<script src="https://gist.github.com/2658517.js"> </script>
+<script src="https://gist.github.com/2658517.js"></script>
 <p>
     Thus forcing the password request on every action, for the ssh
     tunneling. The solution?<br>
     Using the git protocol format:
 </p>
-<script src="https://gist.github.com/2658522.js"> </script>
+<script src="https://gist.github.com/2658522.js"></script>
 <p>
     That's all, now I can push using only the SSH key. I still have to push
     twice, but that is another issue, and until I can find a platform independent
