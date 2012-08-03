@@ -138,10 +138,12 @@ var pauseButton;
 var end = false;
 var soundButton;
 var board;
+var container;
 
 function init() {
     canvas = document.getElementById('pongCanvas');
 	ctx = canvas.getContext('2d');
+    container = document.getElementById('container');
 	collisionSound = document.getElementById('collision');
 	scoreSound = document.getElementById('point');
 	scoreBoard[0] = document.getElementById('playerOneScore');
@@ -167,10 +169,14 @@ function init() {
 			paused = false;
 			this.innerHTML = "Pause";
 			display.innerHTML = '';
+            document.documentElement.style.overflow = 'hidden'; //disable scrolling
+            container.style.paddingRight = '30px';
 		}else{
 			paused = true;
 			this.innerHTML = "Play!";
 			display.innerHTML = 'PAUSED';
+            document.documentElement.style.overflow = 'scroll'; //enable scrolling
+            container.style.paddingRight = '15px';
 		}
 	}
 
@@ -185,6 +191,8 @@ function init() {
 		first = false;
 		document.getElementById('wrapper').style.paddingBottom = '25px';
 		board.style.display = 'block';
+        document.documentElement.style.overflow = 'hidden'; //disable scrolling
+        container.style.paddingRight = '30px';
 	}
 
     document.onkeydown = function keyboardController(e){
