@@ -1,3 +1,8 @@
+html, body, div, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 html{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -7,30 +12,20 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     font-family: 'pt sans', arial, helvetica, sans-serif !important;
-    font-size: .92em;
-	text-align: justify;
-	line-height: 1.5em;
-    background-color: #FFFDF9;
+    font-size: .94em;
+    text-align: justify;
+    line-height: 1.5em;
+    background-color: #FFFFFF;
     color: #444444;
 }
 
-#top-bar{
-    top: 0;
-    position: fixed;
-    height: 19px;
-    width: 100%;
-    background-color: #C83E22;
-    box-shadow: 0 0 10px #888;
-    z-index: 20;
-}
-
 #container{
-    height: 100%;
     width: 800px;
+    min-height: 100%;
+    position: relative;
     margin: 0 auto;
-    padding: 15px;
-    overflow: hidden;
 }
 
 #container a,h4{
@@ -52,6 +47,44 @@ html, body{
     padding: 5px 0 5px 0;
 }
 
+#container li:last-child{
+    border-bottom : none;
+    padding: 5px 0 5px 0;
+}
+
 .pull-right{
     float: right;
+}
+
+#menu {
+    width: 800px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+footer {
+    color: gray;
+    padding: 15px;
+    width: 800px;
+    margin: 0 auto;
+    border-top : 1px dashed #DDDDDD;
+}
+
+/*Gist costumisation*/
+.line_numbers, .gist-meta {
+    display: none !important;
+}
+
+.gist-data {
+    border-bottom: none !important;
+}
+
+.gist-file, .gist-data {
+    border-radius: 2px !important;
 }
