@@ -10,16 +10,18 @@
         {% include analytics.html %}
     </head>
     <body>
-        <div id="menu">
-            <ul>
-                <li>@robertboloc</li>
-            </ul>
-        </div>
+        <nav class="breadcrumb">
+            <a href="/"><b>Blog</b></a> /
+            <a href="https://github.com/robertboloc">Projects</a> / 
+            <a href="https://twitter.com/robertboloc">Contact</a>
+        </nav>
         <div id="container">
             {{ content }}
         </div>
         <footer>
-            &copy; 2012 Robert Boloc
+            <div>
+                All rights reserved. &nbsp;Last updated on {{ site.time | date: "%B %d, %Y" }}
+            </div>
         </footer>
     </body>
 </html>

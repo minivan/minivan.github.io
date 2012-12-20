@@ -43,7 +43,7 @@ html, body{
 }
 
 #container li{
-    border-bottom : 1px dashed #DDDDDD;
+    border-bottom : 1px solid #eee;
     padding: 5px 0 5px 0;
 }
 
@@ -52,30 +52,28 @@ html, body{
     padding: 5px 0 5px 0;
 }
 
-.pull-right{
-    float: right;
-}
+ul.slats li p span.meta {
+    display: block;
+    color: #999;
+}		
 
-#menu {
-    width: 800px;
-    padding: 15px;
-    margin: 0 auto;
-}
-
-#menu li {
-    display: inline;
-    list-style-type: none;
-    padding-right: 15px;
+article footer {
+    padding: 0 !important;
+    border: none !important;
 }
 
 footer {
     color: gray;
     padding: 15px;
-    width: 800px;
     margin: 0 auto;
-    border-top : 1px dashed #DDDDDD;
+    margin-top: 50px;
+    border-top : 1px solid #eee;
 }
 
+footer div {
+    width: 800px;
+    margin: 0 auto;
+}
 /*Gist costumisation*/
 .line_numbers, .gist-meta {
     display: none !important;
@@ -86,5 +84,33 @@ footer {
 }
 
 .gist-file, .gist-data {
-    border-radius: 2px !important;
+    border-radius: 3px !important;
 }
+
+/*Nav*/
+nav.breadcrumb {
+    color: #ccc;
+    width: 800px;
+    margin:0 auto;
+    padding: 15px 0px 10px 0px;
+}
+nav.breadcrumb a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #999;
+}
+nav.breadcrumb a:first-child {
+    margin-left: 0;
+    }
+nav.breadcrumb a:hover,
+nav.breadcrumb a:focus {
+    color: #333;
+}
+nav.breadcrumb a:active {
+    color: #666;
+}
+nav.breadcrumb strong {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #333;
+}		
