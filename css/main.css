@@ -57,20 +57,23 @@ ul.slats li p span.meta {
     color: #999;
 }		
 
+footer {
+    color: gray;
+}
+
 article footer {
     padding: 0 !important;
     border: none !important;
 }
 
-footer {
-    color: gray;
+#main-footer {
     padding: 15px;
     margin: 0 auto;
     margin-top: 50px;
     border-top : 1px solid #eee;
 }
 
-footer div {
+#main-footer div {
     width: 800px;
     margin: 0 auto;
 }
