@@ -6,7 +6,9 @@ title: Home | Robert Boloc
     {% for post in site.posts %}
     <li>
         <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-        <p><span class="meta">{{ post.date | date: "%B %d, %Y" }}</span></p>
+        <p>
+        {{ post.excerpt }}
+        <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span></p>
     </li>
     {% endfor %}
 </ul>
