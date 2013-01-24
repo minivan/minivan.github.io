@@ -53,6 +53,12 @@ html, body{
     padding: 5px 0 5px 0;
 }
 
+.tag {
+    display: inline;
+    color: #999;
+    border: none !important;
+}
+
 ul.slats li h3 {
     margin-bottom : 0;
 }
@@ -124,4 +130,14 @@ nav.breadcrumb strong {
     margin-left: 5px;
     font-weight: bold;
     color: #333;
-}				
+}
+
+/*Colors*/
+
+.green {
+    color: #8CAC29; 
+}
+
+.red {
+    color: #C00;
+}
