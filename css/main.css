@@ -94,7 +94,13 @@ ul.slats li p span.meta {
 }
 
 footer {
+    display: block;
     color: gray;
+    margin-right: auto;
+    margin-left: auto;
+}
+article footer{
+    text-align: center
 }
 
 #main-footer {

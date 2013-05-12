@@ -5,8 +5,10 @@ layout: default
     <h2>{{ page.title }}</h2>
     {{ content }}
     <footer>
-        Posted on {{ page.date | date: "%B %d, %Y" }}
+      Posted on {{ page.date | date: "%B %d, %Y" }}
+      <p><a href="/">Home</a></p>
     </footer>
 </article>
 
-<p><a href="/">&larr; Home</a></p>
+
+{% include comments.html %}
