@@ -3,31 +3,27 @@
     <head>
         <title>{{ page.title }}</title>
         <meta charset=utf-8>
-        <meta name=author content="Robert Boloc">
-        <link rel="shortcut icon" href="/favicon.ico"/>
+        <meta name=author content="Ivan Zarea">
+        <link rel="shortcut icon" href="/assets/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" type="text/css" href="/css/pygments.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         {% include analytics.html %}
     </head>
     <body>
         <nav class="breadcrumb">
             <div>
-                <a href="/"><b>Blog</b></a> /
-                <a href="https://github.com/robertboloc">Projects</a> /
+                <a href="/"><b>Knitting Code  </b> </a>/
+                <a href="/blog">Blog</a> /
+                <a href="/projects">Projects</a> /
+                <a href="/experiments">Experiments</a> /
                 <a href="/about">About</a>
             </div>
         </nav>
         <div id="container">
             {{ content }}
         </div>
-        <footer id="main-footer">
-            <div>
-                Copyright {{ site.time | date: "%Y" }} Robert Boloc. All rights reserved.<br> Last updated on {{ site.time | date: "%B %d, %Y" }}
-            </div>
-            <div>
-                <a href="https://github.com/robertboloc"><img src="/assets/github.png"/></a>
-                <a href="https://twitter.com/robertboloc"><img src="/assets/twitter.png"/></a>
-            </div>
-        </footer>
+        <footer></footer>
     </body>
 </html>

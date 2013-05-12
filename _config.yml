@@ -1,2 +1,3 @@
 exclude: ['CNAME', 'README.md', 'LICENSE.md']
 permalink: pretty
+pygments: true

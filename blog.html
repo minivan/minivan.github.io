@@ -4,6 +4,7 @@ title: Home / Knitting code
 ---
 <ul class="slats">
     {% for post in site.posts %}
+      {% if post.type == "post" %}
         <li>
             <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
             <p>
@@ -11,5 +12,6 @@ title: Home / Knitting code
                 <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span>
             </p>
         </li>
+      {% endif %}
     {% endfor %}
 </ul>
