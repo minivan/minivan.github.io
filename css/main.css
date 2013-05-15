@@ -33,6 +33,21 @@ html, body{
     text-decoration: none;
 }
 
+h2 {
+    text-align: center;
+    color: #888;
+    font-weight: 200;
+    font-size: 2em;
+    line-height: 2.5em;
+}
+
+h1 {
+    text-align: center;
+    color: #C83E22;
+    font-size: 2.2em;
+    line-height: 1.3em;
+}
+
 button, a, button:hover, a:hover, pre, pre:hover, #main-header, #main-header:hover, #top-header:hover h1, ul.tags li a {
   -moz-transition: all linear 0.2s;
   -webkit-transition: all linear 0.2s;
@@ -64,6 +79,16 @@ a:hover {
     padding: 0;
 }
 
+#container .slats li{
+    border-bottom : 1px solid #eee;
+    padding: 5px 10px 5px 0px;
+}
+
+#container .slats li:last-child{
+    border-bottom : none;
+    padding: 5px 0 5px 0px;
+}
+
 #container li{
     border-bottom : 1px solid #eee;
     padding: 5px 10px 5px 20px;
@@ -73,7 +98,6 @@ a:hover {
     border-bottom : none;
     padding: 5px 0 5px 20px;
 }
-
 .tag {
     display: inline;
     color: #999;
