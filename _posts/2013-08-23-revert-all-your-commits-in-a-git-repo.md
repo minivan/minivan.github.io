@@ -15,14 +15,14 @@ Then I had to compare the number with the number of my own commits in the code I
 
 This was done using the following command:
 
-    git rev-list --all --author='Ivan Zarea' --format=oneline
+    git rev-list --all --author='Sneaky Author' --format=oneline
 
 I added the `oneline` format so that I could see the commit messages and be sure that there's no other commits in the output.
 The command gave me 55 commits - the same as Github. We can begin.
 
 Now all we have to do is pass each of the revs to the `git revert`:
 
-    git rev-list --all --author='Ivan Zarea' | xargs git revert -n
+    git rev-list --all --author='Sneaky Author' | xargs git revert -n
 
 Note the `-n` option (equivalent to `--no-commit`). With `git revert` it doesn't create a commit which, in our case, allows us to create one huge commit with all the changes.
 
